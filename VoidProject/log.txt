@@ -1,0 +1,11 @@
+commit e2e64d019da1d007ac4a91cafee492f15887e551 (HEAD -> master)
+Author: AlexGusev <sasha19755791@gmail.com>
+Date:   Mon Feb 26 22:08:44 2018 +0300
+
+    add status.txt
+
+commit 7dfc11ec49956a5e12c688ba3e13f8faa0ac946c
+Author: AlexGusev <sasha19755791@gmail.com>
+Date:   Mon Feb 26 22:04:54 2018 +0300
+
+    add .gitignore
