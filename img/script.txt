@@ -1,0 +1,232 @@
+﻿;(function() {
+  var photoPosts = [
+    {
+      id: '1',
+      description: 'Женская сборная Беларуси выиграла эстафету в рамках соревнований по биатлону на Олимпийских играх в Пхёнчхане!!!',
+      createdAt: new Date('2018-02-23T23:00:00'),
+      author: 'Иванов Иван',
+      photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg'
+     },
+     {
+       id: '2',
+       description: 'На съемках американских болот в Техасе. Дронофотография',
+       createdAt: new Date('2018-03-11T20:41:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/732018_main.jpg'
+     },
+     {
+       id: '3',
+       description: '123',
+       createdAt: new Date('2018-03-11T21:42:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/731683_main.jpg'
+     },
+     {
+       id: '4',
+       description: 'Панорама',
+       createdAt: new Date('2018-03-11T22:43:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/734439_main.jpg'
+     },
+     {
+       id: '5',
+       description: 'Февраль 2018',
+       createdAt: new Date('2018-03-11T23:44:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/731735_main.jpg'
+     },
+     {
+       id: '6',
+       description: 'Пейзаж Беларуси',
+       createdAt: new Date('2018-03-12T00:45:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/732113_main.jpg'
+     },
+     {
+       id: '7',
+       description: 'Река Волга, город Дубна, Московская область',
+       createdAt: new Date('2018-03-12T01:46:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/734355_main.jpg'
+     },
+     {
+       id: '8',
+       description: 'Вид при спуске с Говерлы (Карпаты). 31 января 2018 г.Единственный короткий солнечный просвет позволил сделать этот снимок уже при спуске с Говерлы. Менее через минуту все снова затянуло непроглядной облачной пеленой. По пути же на Говерлу плохо заметная во мгле снежная тропка привела меня именно к этой избушке. В ней пряталась от сильного ветра большая группа белоруссов из Минска. Далее на Говерлу они не пошли и передохнув пошли вниз. Мой же дальнейший путь на вершину проходил чуть выше избушки по гребню, который служил хорошим ориентиром даже в условиях плохой видимости. ',
+       createdAt: new Date('2018-03-13T02:47:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/734988_main.jpg'
+     },
+     {
+       id: '9',
+       description: 'Берега высохшего озера. Дронофотография. Национальный парк Манго, Австралия',
+       createdAt: new Date('2018-03-15T14:45:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/736589_main.jpg'
+     },
+     {
+       id: '10',
+       description: 'Карпатские сюжеты',
+       createdAt: new Date('2018-03-11T20:37:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/737807_main.jpg'
+     },
+     {
+       id: '11',
+       description: 'Праздник "День Оленевода" село Казым, Белоярский район, ХМАО-Югра',
+       createdAt: new Date('2018-03-14T06:00:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/739884_main.jpg'
+     },
+     {
+       id: '12',
+       description: 'р. Западная двина, г. Верхнедвинск. Декабрь 2017г.',
+       createdAt: new Date('2018-03-11T19:40:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/738607_main.jpg'
+     },
+     {
+       id: '13',
+       description: 'Долина Тимна, Израиль. Дронопанорама',
+       createdAt: new Date('2018-03-11T18:39:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/739848_main.jpg'
+     },
+     {
+       id: '14',
+       description: 'Июль,поле,гроза,пшеница',
+       createdAt: new Date('2018-03-11T17:38:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/739857_main.jpg'
+     },
+     {
+       id: '15',
+       description: '***',
+       createdAt: new Date('2018-03-11T16:37:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/739868_main.jpg'
+     },
+     {
+       id: '16',
+       description: 'Россия. Ивановская обл. Село Дунилово Благовещенский монастырь на берегу реки Теза. февраль 2018',
+       createdAt: new Date('2018-03-11T15:36:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/738009_main.jpg'
+     },
+     {
+       id: '17',
+       description: 'Мы ждали на пристани последний электро-катер,чтобы вернуться назад, на главную пристань озера Кенигзее. У немцев всё серьёзно, раз последний, значит последний, опоздаешь, будешь ночевать в горах...',
+       createdAt: new Date('2018-03-11T14:35:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/738579_main.jpg'
+     },
+     {
+       id: '18',
+       description: '2018г.',
+       createdAt: new Date('2018-03-11T13:34:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/738157_main.jpg'
+     },
+     {
+       id: '19',
+       description: 'Московская область, Шатурский район, озеро Святое, февраль 2018 года',
+       createdAt: new Date('2018-03-11T12:00:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://i1.photoclub.by/images/main73/738155_main.jpg'
+     },
+     {
+       id: '20',
+       description: '_^_',
+       createdAt: new Date('2018-03-11T13:41:00'),
+       author: 'Кривогузов Владислав',
+       photoLink: 'https://ii1.photoclub.by/images/main73/738868_main.jpg'
+     },
+  ];
+  function compareDates(a,b){
+    return a.createdAt - b.createdAt;
+  }
+
+  function getPhotoPosts(skip , top, filterConfig)
+  {
+    if(filterConfig.author)
+        result= photoPosts.filter(function(a){
+      return a.author==filterConfig.author;
+    });
+    if(filterConfig.createdAt)
+        result= photoPosts.filter(function(a){
+      return a.createdAt==filterConfig.createdAt;
+    });
+    result.sort(compareDates);
+    return result.slice(skip,skip+top);
+  }
+
+  function getPhotoPost(id){
+    return photoPosts.find(
+      function(item,i,arr){
+          return item.id==id;
+      }
+    )
+  }
+
+  function validatePhotoPost(post){
+  //  if(!post.id || getPhotoPost(post.id)!=undefined)
+    //  return false;
+    if(!post.description || post.description.length>=200)
+      return false;
+    if(!post.createdAt || !post.author || !post.photoLink )
+      return false
+    return post.author.length!=0 && post.photoLink.length!=0;
+  }
+
+  function addPhotoPost(photoPost){
+    if(validatePhotoPost(photoPost)){
+      photoPosts.push(photoPost)
+      return true;
+    }
+    return false;
+  }
+
+  function removePhotoPost(id){
+    photoPosts.splice(photoPosts.indexOf(getPhotoPost(id)), 1);
+  }
+
+  function editPhotoPost(id, photoPost){
+    post=getPhotoPost(id);
+  /*if((photoPost.id && photoPost.id!=id)||(post.author && post.author!=photoPost.author)
+    || (post.createdAt && post.createdAt!=photoPost.createdAt))
+      return false;*/
+      photoPost.createdAt=  post.createdAt;
+      photoPost.author=  post.author;
+      photoPost.id=  post.id;
+    if(validatePhotoPost(photoPost))
+    {
+      post.description=photoPost.description;
+      post.photoLink=photoPost.photoLink;
+      return true;
+    }
+    return false;
+  }
+  console.log(getPhotoPosts(0,2, {author: 'Кривогузов Владислав'}));
+  console.log(getPhotoPost('4'));
+  console.log(getPhotoPost('2'));
+  a={
+     id: '21',
+     description: '123',
+     createdAt: new Date('2018-03-11T20:40:00'),
+     author: 'Кривогузов Владислав',
+     photoLink: 'https://img4.goodfon.ru/original/1920x1080/8/5b/makro-babochka-svet-kolosok.jpg'
+   };
+  console.log(validatePhotoPost(a));
+  console.log(addPhotoPost(a));
+  console.log(photoPosts);
+  removePhotoPost(1);
+  console.log(photoPosts);
+  b={
+     id: '21',
+     description: '345',
+     createdAt: new Date('2018-03-11T20:40:00'),
+     author: 'Кривогузов Владислав',
+     photoLink: 'http://ont.by/webroot/delivery/files/news/2018/02/22/Dom.jpg'
+   };
+   console.log(editPhotoPost(21, b));
+   console.log(photoPosts);
+ })();
