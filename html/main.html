@@ -54,7 +54,7 @@
                 <div class="capture">Find inspiration. Create a story</div>
                 <div class="find-panel">
                     <form action="" class="content">
-                        <input type="text" class="left-panel color-capture text-black" placeholder="I want to admire...">
+                        <input id="input-text" type="text" class="left-panel color-capture text-black" placeholder="I want to admire...">
                         <div class="right-panel">
                             <select class="category  color-capture text-black font-small">
                                 <option value="all">All</option>
@@ -63,7 +63,7 @@
                                 <option value="usa">USA</option>
                             </select>
 
-                            <input type="submit" value="">
+                            <input type="submit" value="" id="find" onclick="return false">
                         </div>
                 </div>
             </div>
@@ -134,11 +134,11 @@
                 You will like it
             </div>
             <div class="content">
-
+                
             </div>
             <div class="panel">
                 <div>
-                    <div class="button color-capture">
+                    <div class="button color-capture" id="load-photos">
                         <div class="text text-black">More photos</div>
                         <div class="animation">
                             <div class="visible">Click on me</div>
@@ -148,32 +148,8 @@
             </div>
         </div>
     </div>
+    
     <div class="footer">
-        <input type="button" value="showPost" onclick="showPost(1, document.querySelector('.body > .center .content'))">
-        <input type="button" value="addLogIn" onclick="addLogIn(document.body)">
-        <input type="button" value="addLoadPhoto" onclick="addLoadPhoto(document.body)">
-        <input type="button" value="hidePost" onclick="hidePost(20)">
-        <input type="button" value="showUserHead(Alex)" onclick="showUserHead('Alex', document.querySelector('.header > .logo-panel > .panel:nth-child(2) > div'))">
-        <input type="button" value="showUserHead(null)" onclick="showUserHead(null, document.querySelector('.header > .logo-panel > .panel:nth-child(2) > div'))">
-        <input type="button" value="addPost" onclick="addPost(document.querySelector('.body > .center .content'), 
-        {
-            id: '20',
-            description: 'Reality is wrong, dreams are for real.',
-            createdAt: new Date('2018-07-23T23:00:00'),
-            author: 'Aley',
-            photoLink: '../img/photo_20.jpg',
-            tags: ['#alex', '#gusev20']
-        })">
-        <input type="button" value="editPost" onclick="editPost(document.querySelector('.body > .center .content'), 
-        {
-            id: '20',
-            description: 'Reality is wrong, dreams are for real.',
-            createdAt: new Date('2018-07-23T23:00:00'),
-            author: 'Aley',
-            photoLink: '../img/photo_20.jpg',
-            tags: ['#00000', '#00000']
-        })">
-
         <div>All rights reserved. &#9400 Alex Gusev 2018</div>
     </div>
     </div>
